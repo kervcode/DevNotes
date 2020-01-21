@@ -57,4 +57,6 @@ initial name was `XMLHttpRequest Object` or `XHR`
  
  a POST request need a special header
  
- #
+ # Web proxy
+ 
+ CORS : Cross Origin Resource Sharing
