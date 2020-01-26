@@ -66,5 +66,27 @@ Next line is the header: `[Header Name]: [Header Value]`
       firstname=Chris&language=English
    ```
    
+   ### Example - Making a request to Restcountries.eu
+   
+   ```
+   const countryCode = 'HT';
+
+//Make an HTTP request
+const requestCountry = new XMLHttpRequest();
+
+requestCountry.addEventListener('readystatechange', (e) => {
+  if (e.target.readyState === 4 && e.target.status === 200){
+    const data = JSON.parse(e.target.responseText)
+//     console.log(data)
+    const country = data.find((country) => country.alpha2Code === countryCode)
+    console.log(country.name)
+  }
+})
+
+requestCountry.open('GET', 'https://restcountries.eu/rest/v2/all')
+requestCountry.send()
+```
+   
+   
    
 
