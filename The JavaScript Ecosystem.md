@@ -48,3 +48,21 @@ in that specific environment.
     - Array
     
     - Math
+    
+# What is Node.js
+
+Node allows developer to do much more with JavaScript than making websites interactive. It is a cross plateform runtime environment for developping server-side applications with JavaScript.
+
+### Node.js Host Objects
+
+  - http
+  
+  - https
+  
+  - fs
+  
+  - url
+  
+  - os
+  
+# JavaScript Frameworks and Libraries
