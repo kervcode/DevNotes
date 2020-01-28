@@ -48,7 +48,7 @@ Using map to print something like `Samir is 27 years old`.
     }
     
   ```
-  # Challenge Task 1 of 1
+  ## Challenge Task 1 of 1
   
   - Using the map method on the authors array, create an array of full name strings, comprising the first name, then a space, then the last name. See the comments below for reference. Store the new array in the fullAuthorNames variable.
   
@@ -69,3 +69,20 @@ Using map to print something like `Samir is 27 years old`.
     
   ```
   
+  # Combining filter() and map()
+  
+    - Combining `filter()` and `map()` can be useful when you want to remove some elements before transforming the remaining elements.
+    
+   ```
+      const usernames = ['Samir', Angela, 'Beatrice', 'Shaniqua', 'Marvin', 'Sean']
+      //expected result: [{'name: 'Samir'},{name: 'Shaniqua'}, {name: 'Sean'}]
+      
+      const users = userNames
+          .filter(name => .name.charAt(0) === 'S')
+          .map(name => ({name}))
+      
+      console.log(users)
+     
+   ```
+      
+      
