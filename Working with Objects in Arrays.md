@@ -64,7 +64,8 @@ Using map to print something like `Samir is 27 years old`.
 
     // fullAuthorNames should be: ["Beatrix Potter", "Ann Martin", "Beverly Cleary", "Roald Dahl", "Lewis Carroll"]
     // Write your code below
-    const fullAuthorNames = authors.map(author => `${author.firstName} ${author.lastName}`);
+    
+    fullAuthorNames = authors.map(author => `${author.firstName} ${author.lastName}`);
     
   ```
   
