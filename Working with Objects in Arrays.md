@@ -199,3 +199,76 @@ Using map to print something like `Samir is 27 years old`.
    console.log(total)
    
   ```
+  
+ # Nested Data and Additional Exploration
+  
+  ```
+  
+    const movies = [
+    
+      ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters'],
+      ['Finding Dory'],
+      ['Jaws', 'On the Waterfront']
+    ]
+
+    // Result: ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters', 'Finding Dory', 'Jaws', 'On the Waterfront']
+    
+  ```
+   - Taking elements out of an array and place them inside of one big array - flattening
+   
+     - The spread operator places element of an array inside of another array
+   
+ ``` 
+    const flatMovies = Movies.reduce((arr, innerMovies) => [...arr, ...innerMovies], []);
+    
+    cosole.log(flatMovies);
+    
+ ```
+ Product the same result
+ 
+ ```
+   const flatMovies = movies
+    .reduce((arr, innerMovies) => arr.concat(innerMovies), []);
+    
+ ```
+# example 2
+
+```
+    const users = [
+      {
+        name: 'Samir',
+        age: 27,
+        favoriteBooks:[
+          {title: 'The Iliad'},
+          {title: 'The Brothers Karamazov'}
+        ]
+      },
+      {
+        name: 'Angela',
+        age: 33,
+        favoriteBooks:[
+          {title: 'Tenth of December'},
+          {title: 'Cloud Atlas'},
+          {title: 'One Hundred Years of Solitude'}
+        ]
+      },
+      {
+        name: 'Beatrice',
+        age: 42,
+        favoriteBooks:[
+          {title: 'Candide'}
+        ]
+      }
+    ];
+
+    // Result: ['The Iliad', 'The Brothers Karamazov', 'Tenth of December', 'Cloud Atlas', 'One Hundred Years of Solitude', 'Candide'];
+
+```
+
+  const books = users
+    .map(user => user.favoriteBooks.map(book => book.title))
+    .reduce((arr, titles) => [...arr, ...titles], []);
+
+  console.log(books);
+
+```
