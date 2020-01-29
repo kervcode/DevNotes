@@ -3,7 +3,7 @@
 Async define and asynchronous function. 
 
   - Example
-    ``` 
+    ```js 
     async function fetchData(url) {
       const response = await fetch(url);
       //parse the reponse to json
