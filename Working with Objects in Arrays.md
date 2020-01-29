@@ -1,6 +1,6 @@
 # Working with Objects in Arrays
 
-```
+```js
   const users = [
   
     {name: 'Samir'},
@@ -18,7 +18,7 @@
 Using map to print something like `Samir is 27 years old`.
 
 
-```
+```js
   const users = [
   
     {name: 'Samir'},
@@ -33,7 +33,7 @@ Using map to print something like `Samir is 27 years old`.
 
 ### using reduce to combine the elements of an array into one value
 
-```
+```js
   const users = [
     {name: 'Samir'},
     {name: 'Angela'},
@@ -47,7 +47,7 @@ Using map to print something like `Samir is 27 years old`.
 ```
  - Output example
  
-  ```
+  ```js
     {
       Samir: 27,
       Angela: 33,
@@ -59,7 +59,7 @@ Using map to print something like `Samir is 27 years old`.
   
   - Using the map method on the authors array, create an array of full name strings, comprising the first name, then a space, then the last name. See the comments below for reference. Store the new array in the fullAuthorNames variable.
   
-  ```
+  ```js
     const authors = [
       { firstName: "Beatrix", lastName: "Potter" },
       { firstName: "Ann", lastName: "Martin" },
@@ -80,7 +80,7 @@ Using map to print something like `Samir is 27 years old`.
   
     - Combining `filter()` and `map()` can be useful when you want to remove some elements before transforming the remaining elements.
     
-   ```
+   ```js
       const usernames = ['Samir', Angela, 'Beatrice', 'Shaniqua', 'Marvin', 'Sean']
       //expected result: [{'name: 'Samir'},{name: 'Shaniqua'}, {name: 'Sean'}]
       
@@ -94,7 +94,7 @@ Using map to print something like `Samir is 27 years old`.
    
    - New exmaple
       
-   ```
+   ```js
    
      const users = [
         {name: 'Samir', age: 27},
@@ -109,7 +109,7 @@ Using map to print something like `Samir is 27 years old`.
   
   ```
   
-  ```
+  ```js
     const userNames = users
       .filter(user => age >= 30)
       .map(user => user.name);
@@ -121,7 +121,7 @@ Using map to print something like `Samir is 27 years old`.
   
   - Using the filter and map methods on the todos array, create an array of unfinished task strings. See the comments below to see the correct result. Store the new array in the variable unfinishedTasks.
   
-  ```
+  ```js
     const todos = [
       {
           todo: 'Buy apples',
@@ -160,7 +160,7 @@ Using map to print something like `Samir is 27 years old`.
 
   - Combining filter() with reduce(), you can remove values from an array, using the results to compute some value. Get some practice with this combination.
   
-```
+```js
     const products = [
       { name: 'hard drive', price: 59.99 },
       { name: 'lighbulbs', price: 2.59 },
@@ -174,7 +174,7 @@ Using map to print something like `Samir is 27 years old`.
     
 ```
 
-```
+```js
   const product = products
     .filter(product => product.price < 10)
     .reduce((highest, product) => {
@@ -190,7 +190,7 @@ Using map to print something like `Samir is 27 years old`.
   
   using const and reduce to 
   
-  ```
+  ```js
    const total = products
     .filter(product => product.price > 10)
     .reduce((sum, product) => sum + product.price, 0)
@@ -202,7 +202,7 @@ Using map to print something like `Samir is 27 years old`.
   
  # Nested Data and Additional Exploration
   
-  ```
+  ```js
   
     const movies = [
     
@@ -226,14 +226,14 @@ Using map to print something like `Samir is 27 years old`.
  ```
  Product the same result
  
- ```
+ ```js
    const flatMovies = movies
     .reduce((arr, innerMovies) => arr.concat(innerMovies), []);
     
  ```
 # example 2
 
-```
+```js
     const users = [
       {
         name: 'Samir',
@@ -263,7 +263,7 @@ Using map to print something like `Samir is 27 years old`.
 
     // Result: ['The Iliad', 'The Brothers Karamazov', 'Tenth of December', 'Cloud Atlas', 'One Hundred Years of Solitude', 'Candide'];
 
-```
+```js
 
   const books = users
     .map(user => user.favoriteBooks.map(book => book.title))
