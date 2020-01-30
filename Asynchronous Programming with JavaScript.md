@@ -20,7 +20,7 @@ A callback function is a function passed into another function as an argument. T
 
 For example, the add function below accepts a function as its third argument (via the parameter callback). When add is invoked, the function passed to it logs the sum of the values passed in for a and b.
 
-```
+```js
   function add(a, b, callback) {
     callback(a + b);
   }
@@ -33,7 +33,7 @@ For example, the add function below accepts a function as its third argument (vi
 
 In the following example, the function getUserName accepts a function as an argument (via the parameter callback). The greeting function passed to getUserName is invoked after prompt() captures a name and stores it in the variable name.
 
-```
+```js
   function getUserName(callback) {
     const name = prompt('What is your name?');
     callback(name);
@@ -63,7 +63,7 @@ ex
                        }
       }, 4500, recipeID[2])
     }, 3000)
-  }
+  };
   
 ```
 
@@ -81,13 +81,13 @@ ex
      
      - After pending, they can either change to resolve or reject.
      
-     ```js
+   ```js
      
        const getIDs = new Promise((resolve, reject) => {
           setTimeout(() => {
             resolve([523, 883, 432, 974])
           }, 1500)
-       })
+       });
        
        const getRecipe = recID => {
           return new Promise(() => {
@@ -108,18 +108,15 @@ ex
               resolve(${pub}: ${recipe}`);
             })
         }, 1500, publisher)
-       }
+       };
        
-       getIDs
-         .then(IDs => {
+       getIDs.then(IDs => {
             console.log(IDs)
-         })
-         .then(recipe => {
+         }).then(recipe => {
             console.log(recipe);
             return getRecipe(IDs[2])
-         })
-         .catch(error => {
+         }).catch(error => {
             console.log(error)
-         }) 
+         });
        
-     ```
+   ```
