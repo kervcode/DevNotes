@@ -45,7 +45,7 @@ First line is Status-line: `HTTP/[version] [status message]`
 Next line is the header: `[Header Name]: [Header Value]`
 
       - Ex: 
- ``` 
+ ```js 
             Server: Nginx
             Date: Wed, 15 Jan 2020 20:18:59 EST
             Content-Type: application/xml
@@ -68,7 +68,7 @@ Next line is the header: `[Header Name]: [Header Value]`
    
    ### Example - Making a request to Restcountries.eu
    
-   ```
+   ```js
    const countryCode = 'HT';
 
 //Make an HTTP request
