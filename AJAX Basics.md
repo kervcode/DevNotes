@@ -19,7 +19,7 @@ initial name was `XMLHttpRequest Object` or `XHR`
 
 #### A Simple AJAX Example
 
-```
+```js
  <script>
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function () {
@@ -39,9 +39,9 @@ initial name was `XMLHttpRequest Object` or `XHR`
   
   Character encoding
   
-  - `& => %26`
+  - `js & => %26`
   
-  - `Space => +`
+  - `js Space => +`
   
   - `+ => %2B`
   
