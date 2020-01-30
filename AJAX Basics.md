@@ -39,9 +39,9 @@ initial name was `XMLHttpRequest Object` or `XHR`
   
   Character encoding
   
-  - `js & => %26`
+  - ` & => %26`
   
-  - `js Space => +`
+  - ` Space => +`
   
   - `+ => %2B`
   
