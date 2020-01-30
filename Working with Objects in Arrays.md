@@ -218,7 +218,7 @@ Using map to print something like `Samir is 27 years old`.
    
      - The spread operator places element of an array inside of another array
    
- ``` 
+ ```js 
     const flatMovies = Movies.reduce((arr, innerMovies) => [...arr, ...innerMovies], []);
     
     cosole.log(flatMovies);
