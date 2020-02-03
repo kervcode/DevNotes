@@ -34,3 +34,5 @@ NPM  is a package manager for JavaScript. It is most commonly used for installin
     - Linux
     
 # Installing Local Packages
+
+tarball file > File format that combine multiple files into a single file.
