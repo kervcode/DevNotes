@@ -51,4 +51,6 @@ In JavaScript, there are two types of events that can occurs.
       }
    ```
   
-  ### JavaScript in the browser
+  ### Making request with http
+  
+  buffer
