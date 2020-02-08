@@ -17,7 +17,7 @@
 in other to use express, we must add it using the node require statement. 
 
  - ```js 
-         const express = require('express'); 
+        const express = require('express'); 
      ```
 
 ### Creating a Server in Express
@@ -101,3 +101,22 @@ in other to use express, we must add it using the node require statement.
   
 # Using Templates with Express
 
+- Templates are speciale type of file that have their own syntax and language.They live on the server, and act as some lind of form letter for HTML. 
+
+## Most popular template languages
+
+- Handlebars
+
+- EJS 
+
+- Pug 
+
+- A template provides the basic HTML for your app and serves it to the users. 
+
+- Template also lets you vary the output to provide customized responses. 
+
+# Pug
+
+## What is Pug? 
+
+Pug is one of the most popular templating engines for Node. 
