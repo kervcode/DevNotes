@@ -101,7 +101,7 @@ in other to use express, we must add it using the node require statement.
   
 # Using Templates with Express
 
-- Templates are speciale type of file that have their own syntax and language.They live on the server, and act as some lind of form letter for HTML. 
+- Templates are speciale type of file that have their own syntax and language.They live on the server, and act as some kind of form letter for HTML. 
 
 ## Most popular template languages
 
@@ -120,3 +120,53 @@ in other to use express, we must add it using the node require statement.
 ## What is Pug? 
 
 Pug is one of the most popular templating engines for Node. 
+
+- Pug Example
+
+```js
+h1 I love TreeHouse
+
+ul
+
+  li Red
+  li Yellow
+  li Blueconst
+  
+```
+
+# Using Pug in Your Express App
+
+  - Steps to Using Pug
+  
+    - Down **Pug** with npm
+    
+    - Update code in app to use Pug
+    
+    - Create Templates
+    
+    - Render templates with response.render()
+    
+```js
+npm install pug --save
+
+const express = require('express');
+const app = express();
+
+app.set('view engine', 'pug') // The app.set method defines different settings in Express.
+
+app.get('/', (req, res)=>{
+    res.render('index');
+});
+
+app.get('/hello', (req, res)=>{
+    res.send('<h1>Express is amazing</h1>');
+});
+
+app.get('/page', (req, res)=>{
+    res.send('<h1>Another page</h1>');
+});
+app.listen(3000);
+
+```
+
+
