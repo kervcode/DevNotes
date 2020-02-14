@@ -180,5 +180,24 @@ form(action='', method= '')
 
 ```
 # The Request Object
+the request object allows the application to look at the request that the client has made.
 
+# The response object 
+The reponse object offer ways to reshape the reponse bak to the client
 
+# Someobject methods
+
+- .send() : sends a response string
+
+- . render() : merges the data with the templates to surf dynamic pages.
+
+- json()
+
+# HTTP
+
+is called a stateless protocol. This fundamental principle of HTTP means that the server does
+track the relationship between one request and another.
+
+this means each transaction with the server is independent and unrelated.
+
+- Clients and services jave stateless interations. A server retains no memory of the client after sending a response.
