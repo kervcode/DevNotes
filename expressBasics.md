@@ -168,5 +168,17 @@ app.get('/page', (req, res)=>{
 app.listen(3000);
 
 ```
+# GET Requests
+Asks for data from the server like a web page from a server.
+
+# POST Requests
+is when a client send data to the server.
+
+the form tag in pug require a method and action attibute. 
+```js
+form(action='', method= '')
+
+```
+# The Request Object
 
 
