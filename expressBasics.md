@@ -211,3 +211,5 @@ this means each transaction with the server is independent and unrelated.
   - **cookie-parser** : 
   
   - **cookie-parser** : 
+  
+  redirect are often used to make the same work page available from several URLs.
