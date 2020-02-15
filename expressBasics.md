@@ -200,4 +200,14 @@ track the relationship between one request and another.
 
 this means each transaction with the server is independent and unrelated.
 
-- Clients and services jave stateless interations. A server retains no memory of the client after sending a response.
+- Clients and servers have stateless interations. 
+  - A server retains no memory of the client after sending a response, no matter how recently or often they interact.
+
+- A cookie is a piece of data that the service stores on the client.
+  - Cookies are stored on the browser by domain.
+  
+  res.cookie('username', req.body.username);
+  
+  - **cookie-parser** : 
+  
+  - **cookie-parser** : 
