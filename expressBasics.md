@@ -145,6 +145,14 @@ ul
     - Create Templates
     
     - Render templates with response.render()
+ 
+ # GET Requests
+ 
+- Get method is used to handle the get requests to a certain URL.
+
+- Get method takes two parameters, a **request object** and a **response object**. 
+
+- Asks for data from the server like a web page from a server.
     
 ```js
 npm install pug --save
@@ -168,8 +176,6 @@ app.get('/page', (req, res)=>{
 app.listen(3000);
 
 ```
-# GET Requests
-Asks for data from the server like a web page from a server.
 
 # POST Requests
 is when a client send data to the server.
@@ -189,7 +195,7 @@ The reponse object offer ways to reshape the reponse bak to the client
 
 - .send() : sends a response string
 
-- . render() : merges the data with the templates to surf dynamic pages.
+- .render() : merges the data with the templates to surf dynamic pages.
 
 - json()
 
