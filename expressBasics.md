@@ -119,20 +119,22 @@ in other to use express, we must add it using the node require statement.
 
 ## What is Pug? 
 
-Pug is one of the most popular templating engines for Node. 
+- Pug is one of the most popular templating engines for Node. 
 
-- Pug Example
+- Pug is a language that compile or translate to HTML.
 
-```js
-h1 I love TreeHouse
+  - Pug Example
 
-ul
+    ```js
+    h1 I love TreeHouse
 
-  li Red
-  li Yellow
-  li Blueconst
-  
-```
+    ul
+
+      li Red
+      li Yellow
+      li Blueconst
+
+    ```
 
 # Using Pug in Your Express App
 
