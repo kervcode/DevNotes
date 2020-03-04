@@ -14,7 +14,8 @@ app.set('view engine', 'pug');
       title Landing Page
     body
       h1 The future home of a flashcard!
-      p Difficulty on insensible reasonable in. From as went he they. Preference themselves me as thoroughly partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. 
+      p Difficulty on insensible reasonable in. From as went he they. 
+      
 ```
 ### Basic Formatting
 
@@ -111,3 +112,18 @@ html(lang="en")
       p An app to help you study.
   
   ```
+### Form
+
+```js
+extends layout.pug
+
+block content
+  h2 Welcome, Student
+  form(action="/hello", method="post")
+    label Please enter your name 
+      input(type="text", name="username") 
+    button(type="button")  Submit
+
+```
+
+- **req.body** Contains key-value pair of data submitted in the request body. By default it is undefined.
