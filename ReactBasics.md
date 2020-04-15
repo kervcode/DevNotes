@@ -40,3 +40,15 @@ Everything in react is considered to be a component.
     );
   }
 ```
+
+- There are two ways that data get handle in react.
+  - Props : read only or immutable
+  - State : We use state for any data that is going to change.
+  
+# State
+## What is state?
+- State is the data that you want to track in your app. allows to create components that are dynamic, interactive, and it is the only data that changes over time.
+
+- State is a regular JavaScript object with properties that defibe the peice of data that is changed.
+
+- State is only available to class component
