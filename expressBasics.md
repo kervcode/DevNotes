@@ -66,8 +66,8 @@ in other to use express, we must add it using the node require statement.
           response.send(); // The send method send a string to the client.
         })
     ```
-    
-    
+### Locals   
+- Locals is the name for variables we want the view to have access to when it's being rendered.
     
 # Chapter example
 
