@@ -52,3 +52,10 @@ Everything in react is considered to be a component.
 - State is a regular JavaScript object with properties that defibe the peice of data that is changed.
 
 - State is only available to class component
+
+
+## Type of State
+
+  - Application State : data available to the entire application
+  
+  - Component State : State that is specific to a component and not shared outside of the component.
