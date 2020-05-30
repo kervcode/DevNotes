@@ -44,6 +44,14 @@ Everything in react is considered to be a component.
   - Props : read only or immutable
   - State : We use state for any data that is going to change.
   
+# this.props
+
+Props is one way that component can pass data from one component to another.
+
+## Passing props to components
+
+Props can be pass to a component by passing an attibute to the JSX component
+
 # State
 ## What is state?
 - State is the data that you want to track in your app. allows to create components that are dynamic, interactive, and it is the only data that changes over time.
