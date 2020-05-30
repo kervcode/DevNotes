@@ -7,7 +7,6 @@ React is a JavaScript Library for building user interface.
   - Create React app
   - or with CDN
   
-
 ```js
 const title = React.createElement(
   'h1', 
@@ -59,3 +58,22 @@ Everything in react is considered to be a component.
   - Application State : data available to the entire application
   
   - Component State : State that is specific to a component and not shared outside of the component.
+
+# Lifting State Up
+
+When two or more component need access to the same state, we move the state into their common parent.
+
+## Creating a Controlled Component
+- Initialize state for the Value of the input
+- Listen for changes on the input to detect when value is updated
+- Create an event handler that updates the value state
+
+# Component Lifecycle
+Every component instance follows a cycle: it's mounter onto the DOM, it's update with changes in data, and it's unmounted from the DOM.
+
+## React Lifecycle methods
+- Built-in methods that get called at each point in the life cycle
+
+- Hooks that run code at key times in a component's life cycle
+
+- Give you the ability to control what happens when a component mounts, updates, and unmounts.
