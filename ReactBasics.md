@@ -66,6 +66,23 @@ Props can be pass to a component by passing an attibute to the JSX component
   - Application State : data available to the entire application
   
   - Component State : State that is specific to a component and not shared outside of the component.
+  
+  ## Add State to Component
+  
+  ```js
+  
+    class Example extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = { mood: 'decent' };
+      }
+
+      render() {
+        return <div></div>;
+      }
+    }
+    
+  ```
 
 # Lifting State Up
 
