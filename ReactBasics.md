@@ -52,6 +52,8 @@ Props is one way that component can pass data from one component to another.
 
 Props can be pass to a component by passing an attibute to the JSX component
 
+- Rendering is the only way for a component to pass props to another component.
+
 # State
 ## What is state?
 - State is the data that you want to track in your app. allows to create components that are dynamic, interactive, and it is the only data that changes over time.
@@ -92,6 +94,12 @@ When two or more component need access to the same state, we move the state into
 - Initialize state for the Value of the input
 - Listen for changes on the input to detect when value is updated
 - Create an event handler that updates the value state
+
+# Statefull Components vs Stateless Component
+
+- “Stateful” describes any component that has a state property; 
+
+- “stateless” describes any component that does not.
 
 # Component Lifecycle
 Every component instance follows a cycle: it's mounter onto the DOM, it's update with changes in data, and it's unmounted from the DOM.
