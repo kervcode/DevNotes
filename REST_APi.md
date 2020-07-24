@@ -25,3 +25,8 @@ represent a single records or a collection of records.
   # Cache
   A cache is usually a service that runs in memory to hold recently requested results, like a newly created record, or a large data set.
 This helps to prevent database calls and even costly calculations on your data.
+
+# REST API with Express
+REST - Representational State Transfer
+
+- Rest is a set of ideas about how a server should respond to a request from a Client.
