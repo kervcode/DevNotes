@@ -83,7 +83,7 @@ Sass is a CSS preprocessor, an extension of CSS that adds power and elengace to 
 
 ```scss
     @function divide($a, $b) {
-        @return @a / $b;
+        @return $a / $b;
     }
 ```
 
@@ -95,4 +95,10 @@ nav {
   }
 ```
 
-        
+ ### extend
+ 
+ - declaration
+
+```scss
+    
+```
