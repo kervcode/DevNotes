@@ -11,29 +11,6 @@
 |   |how to name classes|Compress images|
 |   |How to structure HTML|
 
-1. 
-    - 
-    - 
-    - 
-    - 
-    - 
-    
-2. Maintainable and Scalable Code
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-
-3.  Web performace
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
 
 # How CSS Works Behind the Scenes
   ### How CSS is Parsed 
