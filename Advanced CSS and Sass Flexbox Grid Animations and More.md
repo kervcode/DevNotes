@@ -77,4 +77,22 @@ Sass is a CSS preprocessor, an extension of CSS that adds power and elengace to 
     }
 ```
 
+### function
+
+- Declare function
+
+```scss
+    @function divide($a, $b) {
+        @return @a / $b;
+    }
+```
+
+- use function
+
+```scss
+nav {
+    margin: divide(60 / 2) * 1px;
+  }
+```
+
         
